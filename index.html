@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- own ccs starts -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap css added here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+       <div class="cal">
+        <input class="w-100" id="display" readonly>
+        <div class="main">
+            <button onclick="restart()"    class="cell">C</button>
+            <button onclick="del()"        class="cell">del</button>
+            <button onclick="Onclick('**')" class="cell">**</button>
+            <button onclick="Onclick('/')" class="cell">➗</button>
+            <button onclick="Onclick('7')" class="cell">7</button>
+            <button onclick="Onclick('8')" class="cell">8</button>
+            <button onclick="Onclick('9')" class="cell">9</button>
+            <button onclick="Onclick('*')" class="cell">✖️</button>
+            <button onclick="Onclick('4')" class="cell">4</button>
+            <button onclick="Onclick('5')" class="cell">5</button>
+            <button onclick="Onclick('6')" class="cell">6</button>
+            <button onclick="Onclick('-')" class="cell">➖</button>
+            <button onclick="Onclick('1')" class="cell">1</button>
+            <button onclick="Onclick('2')" class="cell">2</button>
+            <button onclick="Onclick('3')" class="cell">3</button>
+            <button onclick="Onclick('+')" class="cell">➕</button>
+            <button onclick="Onclick('0')" class="cell">0</button>
+            <button onclick="Onclick('00')" class="cell">00</button>
+            <button onclick="Onclick('.')" class="cell">.</button>
+            <button onclick="Calculate()" class="cell">🟰</button>
+        </div>
+       </div>
+    </div>
+       
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
